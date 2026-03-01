@@ -1,0 +1,29 @@
+/* ========================================
+   PARTICLES BACKGROUND COMPONENT
+   ========================================
+   This component renders an animated WebGL
+   particle background that covers the entire
+   viewport and stays fixed during scrolling.
+   ======================================== */
+
+/* Main container for the particles canvas */
+.particles-container {
+  /* Fixed position so it stays as background while scrolling */
+  position: fixed;
+  /* Cover the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Place behind all other content */
+  z-index: -1;
+  /* Ensure particles don't capture mouse events */
+  pointer-events: none;
+}
+
+/* The canvas element created by the Particles component */
+.particles-container canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
