@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 
 // Import the Particles component for the animated background
 import Particles from './components/Particles';
-// Import ClickSpark for interactive click effects (from existing .jsx file)
-import ClickSpark from './components/ClickSpark.jsx';
+// Import ClickSpark for interactive click effects
+import ClickSpark from './components/ClickSpark';
 
 export const metadata: Metadata = {
   title: 'Harsh Wardhan| Full-Stack & AI Engineer',
@@ -56,7 +56,7 @@ export default function RootLayout({
                  duration, easing, extraScale
           ========================================
         */}
-        {/* @ts-expect-error - ClickSpark is a JSX component without TypeScript definitions */}
+        
         <ClickSpark 
           sparkColor="#57f0ff"
           sparkCount={8}

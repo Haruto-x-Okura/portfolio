@@ -1,8 +1,27 @@
 'use client';
 
-import { useRef, useEffect, useCallback } from 'react';
+import React, { useRef, useEffect, useCallback, ReactNode } from 'react';
 
-const ClickSpark = ({
+export interface ClickSparkProps {
+  /** Color of the spark particles */
+  sparkColor?: string;
+  /** Size of individual spark particles */
+  sparkSize?: number;
+  /** Radius of the spark explosion */
+  sparkRadius?: number;
+  /** Number of spark particles */
+  sparkCount?: number;
+  /** Duration of the spark animation in milliseconds */
+  duration?: number;
+  /** Easing function for the animation */
+  easing?: 'linear' | 'ease-in' | 'ease-out' | 'ease-in-out';
+  /** Extra scale factor for the explosion radius */
+  extraScale?: number;
+  /** Child elements to render inside the click spark container */
+  children?: ReactNode;
+}
+
+const ClickSpark: React.FC<ClickSparkProps> = ({
   sparkColor = '#fff',
   sparkSize = 10,
   sparkRadius = 15,
@@ -12,9 +31,14 @@ const ClickSpark = ({
   extraScale = 1.0,
   children
 }) => {
-  const canvasRef = useRef(null);
-  const sparksRef = useRef([]);
-  const startTimeRef = useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const sparksRef = useRef<Array<{
+    x: number;
+    y: number;
+    angle: number;
+    startTime: number;
+  }>>([]);
+  const startTimeRef = useRef<number | null>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -23,7 +47,7 @@ const ClickSpark = ({
     const parent = canvas.parentElement;
     if (!parent) return;
 
-    let resizeTimeout;
+    let resizeTimeout: NodeJS.Timeout;
 
     const resizeCanvas = () => {
       const { width, height } = parent.getBoundingClientRect();
@@ -50,7 +74,7 @@ const ClickSpark = ({
   }, []);
 
   const easeFunc = useCallback(
-    t => {
+    (t: number): number => {
       switch (easing) {
         case 'linear':
           return t;
@@ -69,10 +93,11 @@ const ClickSpark = ({
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
+    if (!ctx) return;
 
-    let animationId;
+    let animationId: number;
 
-    const draw = timestamp => {
+    const draw = (timestamp: number) => {
       if (!startTimeRef.current) {
         startTimeRef.current = timestamp;
       }
@@ -115,7 +140,7 @@ const ClickSpark = ({
     };
   }, [sparkColor, sparkSize, sparkRadius, sparkCount, duration, easeFunc, extraScale]);
 
-  const handleClick = e => {
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const rect = canvas.getBoundingClientRect();
