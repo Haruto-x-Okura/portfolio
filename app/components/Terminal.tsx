@@ -47,7 +47,7 @@ const MAIN_COMMANDS: Record<string, string | (() => void)> = {
     return 'Navigating to Projects section...';
   },
   
-  whoami: 'Harsh Wardhan - A passionate full-stack developer specializing in building innovative web experiences with modern technologies.',
+  whoami: 'Harsh Wardhan -Full-stack developer experienced in designing and implementing scalable web systems with modern frontend and backend technologies.',
   
   ls: 'Available sections:\n  about    - About me\n  skills   - Technical skills\n  projects - My projects\n  github   - GitHub stats\n  contact  - Get in touch',
   

@@ -5,25 +5,28 @@ import Terminal from './Terminal';
 
 const projects = [
   {
-    name: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with payment integration',
-    tech: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL'],
-    github: '#',
-    live: '#',
+    name: 'SRM CGPA Calculator',
+    description: 'An SRM grading-system-based CGPA calculator that allows students to input course credits and grades to compute semester GPA and cumulative CGPA instantly, ensuring accuracy and ease of use.',
+    tech: ['HTML', 'CSS', 'JavaScript','Firebase'],
+    github: 'https://github.com/Haruto-x-Okura/SRM-cgpa-calculator',
+    live: 'https://srm-cgpa-calculator-by-haruto.vercel.app/',
+    image: '/images/Srm_cgpa.png',
   },
   {
-    name: 'AI Chat Application',
-    description: 'Real-time chat with AI powered by OpenAI API',
-    tech: ['React', 'Node.js', 'OpenAI', 'Socket.io'],
-    github: '#',
-    live: '#',
+    name: 'FocusX - Pomodoro Timer',
+    description: 'A glassmorphism-style Pomodoro timer built with HTML, CSS, and JavaScript, featuring dynamic backgrounds and adaptive text contrast for improved focus and usability.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/Haruto-x-Okura/12-days-12-projects/tree/master/focusX',
+    live: 'https://focusxbyharuto.netlify.app/',
+    image: '/images/focus-x.png',
   },
   {
-    name: 'Task Management App',
-    description: 'Collaborative project management tool',
-    tech: ['Next.js', 'Redux', 'MongoDB', 'Tailwind'],
-    github: '#',
-    live: '#',
+    name: 'Tempify',
+    description: 'A web-based temperature conversion tool built with HTML, CSS, and JavaScript, enabling seamless conversion between Celsius, Fahrenheit, and Kelvin.',
+    tech: ['HTML', 'CSS', 'JavaScript'],
+    github: 'https://github.com/Haruto-x-Okura/12-days-12-projects/tree/master/Tempify',
+    live: 'https://tempifybyharuto.netlify.app/',
+    image: '/images/tempify.png',
   },
 ];
 
@@ -38,7 +41,7 @@ export default function Projects() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            <span className="text-gradient">{"<Works/>"}</span>
+            <span className="text-gradient">{"<Projects/>"}</span>
           </h2>
         </motion.div>
 
@@ -55,7 +58,7 @@ export default function Projects() {
               {/* Project Image/Screenshot */}
               <div className="glass-card p-2">
                 <div className="bg-gradient-to-br from-bg-secondary to-bg-primary rounded-xl h-64 flex items-center justify-center">
-                  <div className="text-gray-500 text-lg font-mono">Project Screenshot</div>
+                  <img src={project.image} alt={project.name} className="w-full h-full object-cover rounded-xl" />
                 </div>
               </div>
 

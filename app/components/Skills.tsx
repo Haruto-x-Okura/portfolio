@@ -1,22 +1,22 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from "next/image";
 
 const skills = [
-  { name: 'HTML', icon: '🎨' },
-  { name: 'CSS', icon: '🎨' },
-  { name: 'JavaScript', icon: '📜' },
-  { name: 'TypeScript', icon: '📘' },
-  { name: 'React', icon: '⚛️' },
-  { name: 'Redux', icon: '🔄' },
-  { name: 'Tailwind', icon: '💨' },
-  { name: 'Node.js', icon: '🟢' },
-  { name: 'MongoDB', icon: '🍃' },
-  { name: 'PostgreSQL', icon: '🐘' },
-  { name: 'Python', icon: '🐍' },
-  { name: 'Django', icon: '🎯' },
-  { name: 'Next.js', icon: '▲' },
-  { name: 'Figma', icon: '🎨' },
+  { name: 'HTML', icon: <img src="/icons/html5.svg" className='invert' alt="HTML" width="40" /> },
+  { name: 'CSS', icon: <img src="/icons/css.svg" className="invert" alt="CSS" width="40" /> },
+  { name: 'JavaScript', icon: <img src="/icons/javascript.svg" className='invert' alt="JavaScript" width="40" /> },
+  { name: 'React', icon: <img src="/icons/react.svg" className='invert' alt="React" width="40" /> },
+  { name: 'Git', icon: <img src="/icons/git.svg" className='invert' alt="Git" width="40" /> },
+  { name: 'Github', icon: <img src="/icons/github.svg" className='invert' alt="Github" width="40" /> },
+  { name: 'Node.js', icon: <img src="/icons/nodedotjs.svg" className='invert' alt="Node.js" width="40" /> },
+  { name: 'MongoDB', icon: <img src="/icons/mongodb.svg" className='invert' alt="MongoDB" width="40" /> },
+  { name: 'Python', icon: <img src="/icons/python.svg" className='invert' alt="Python" width="40" /> },
+  { name: 'Next.js', icon: <img src="/icons/nextdotjs.svg" className='invert' alt="Next.js" width="40" /> },
+  { name: 'Java', icon: <img src="/icons/java.svg" className='invert' alt="Java" width="40" /> },
+  { name: 'C', icon: <img src="/icons/c.svg" className='invert' alt="C" width="40" /> },
+  { name: 'C++', icon: <img src="/icons/cplusplus.svg" className='invert' alt="C++" width="40" /> },
 ];
 
 export default function Skills() {

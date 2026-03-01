@@ -1,13 +1,15 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Terminal from './Terminal';
+import { motion } from "framer-motion";
+import Terminal from "./Terminal";
 
 export default function Hero() {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center relative pt-20">
+    <section
+      id="about"
+      className="min-h-screen flex items-center justify-center relative pt-20"
+    >
       <div className="max-w-screen-1200 mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-        
         {/* Left Side - Text Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -23,7 +25,9 @@ export default function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6"
           >
             <span className="w-2 h-2 rounded-full bg-neon-green animate-pulse"></span>
-            <span className="font-mono text-sm text-gray-300">Full-Stack Developer /&gt;</span>
+            <span className="font-mono text-sm text-gray-300">
+              Full-Stack Developer /&gt;
+            </span>
           </motion.div>
 
           {/* Main Heading */}
@@ -32,8 +36,29 @@ export default function Hero() {
           </h1>
 
           {/* Stacked Typography */}
-          <div className="text-4xl md:text-6xl font-bold mb-6">
-            <p className="text-gradient">Alias: Haruto Okura</p>
+          <div className="relative inline-block mb-6">
+            {/* Glow layer */}
+            <div
+              className="absolute inset-0 
+                  bg-blue-500/20 
+                  blur-xl 
+                  rounded-full"
+            />
+
+            {/* Tag */}
+            <div
+              className="relative px-4 py-1 
+                  text-sm tracking-wider 
+                  border border-blue-400/40 
+                  rounded-full 
+                  bg-black/40 backdrop-blur-md 
+                  text-blue-400 font-mono"
+            >
+              Alias: Haruto Okura
+            </div>
+          </div>
+
+          <div className="text-4xl md:text-6xl font-bold">
             <p className="text-white">Full-Stack</p>
             <p className="text-gray-400">& AI Engineer</p>
           </div>
@@ -45,7 +70,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-xl text-gray-400 mb-8 max-w-lg"
           >
-            Building scalable systems and intelligent applications with modern technologies.
+            Building scalable systems and intelligent applications with modern
+            technologies.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -70,12 +96,43 @@ export default function Hero() {
           </motion.div>
 
           {/* Animated Orbit Lines */}
-          <svg className="absolute -top-20 -left-20 w-96 h-96 opacity-20" viewBox="0 0 400 400">
-            <circle cx="200" cy="200" r="150" fill="none" stroke="rgba(87,240,255,0.3)" strokeWidth="1">
-              <animateTransform attributeName="transform" type="rotate" from="0 200 200" to="360 200 200" dur="20s" repeatCount="indefinite"/>
+          <svg
+            className="absolute -top-20 -left-20 w-96 h-96 opacity-20"
+            viewBox="0 0 400 400"
+          >
+            <circle
+              cx="200"
+              cy="200"
+              r="150"
+              fill="none"
+              stroke="rgba(87,240,255,0.3)"
+              strokeWidth="1"
+            >
+              <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="0 200 200"
+                to="360 200 200"
+                dur="20s"
+                repeatCount="indefinite"
+              />
             </circle>
-            <circle cx="200" cy="200" r="100" fill="none" stroke="rgba(139,92,246,0.3)" strokeWidth="1">
-              <animateTransform attributeName="transform" type="rotate" from="360 200 200" to="0 200 200" dur="15s" repeatCount="indefinite"/>
+            <circle
+              cx="200"
+              cy="200"
+              r="100"
+              fill="none"
+              stroke="rgba(139,92,246,0.3)"
+              strokeWidth="1"
+            >
+              <animateTransform
+                attributeName="transform"
+                type="rotate"
+                from="360 200 200"
+                to="0 200 200"
+                dur="15s"
+                repeatCount="indefinite"
+              />
             </circle>
           </svg>
         </motion.div>

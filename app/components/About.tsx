@@ -33,9 +33,9 @@ export default function About() {
           >
             <div className="bg-zinc-900/50 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800">
               <p className="text-zinc-300 leading-relaxed mb-4">
-                I'm a passionate developer who loves creating innovative solutions. 
-                With a strong foundation in both frontend and backend technologies, 
-                I build applications that are not only functional but also visually appealing.
+                I develop full-stack solutions that prioritize scalability, performance, and intuitive design.
+                By combining frontend precision with backend architecture,
+                I create applications that are both technically sound and user-focused.
               </p>
               <p className="text-zinc-400 leading-relaxed">
                 When I'm not coding, you'll find me exploring new technologies, 
