@@ -11,7 +11,7 @@ interface GitHubEvent {
   type: string;
 }
 
-const username = 'Haruto-x-Okura';
+const username = 'harshwardhan1507';
 
 export default function ContributionGraph() {
   const chartRef = useRef<HTMLCanvasElement>(null);

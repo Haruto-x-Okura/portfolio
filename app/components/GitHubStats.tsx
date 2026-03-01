@@ -39,7 +39,7 @@ function StatCard({ icon, value, label, delay }: StatCardProps) {
 export default function GitHubStats() {
   const [user, setUser] = useState<GitHubUser | null>(null);
   const [loading, setLoading] = useState(true);
-  const username = 'Haruto-x-Okura';
+  const username = 'harshwardhan1507';
 
   useEffect(() => {
     fetch(`https://api.github.com/users/${username}`)

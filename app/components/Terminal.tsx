@@ -78,7 +78,7 @@ export default function Terminal({ mode = 'main', projectUrl, githubUrl }: Termi
     },
     
     github: () => {
-      const url = githubUrl || 'https://github.com/Haruto-x-Okura';
+      const url = githubUrl || 'https://github.com/harshwardhan1507';
       if (typeof window !== 'undefined') {
         window.open(url, '_blank');
       }

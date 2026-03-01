@@ -86,7 +86,7 @@ function RepoCard({ repo, index }: { repo: Repository; index: number }) {
 export default function RepoList() {
   const [repos, setRepos] = useState<Repository[]>([]);
   const [loading, setLoading] = useState(true);
-  const username = 'Haruto-x-Okura';
+  const username = 'harshwardhan1507';
 
   useEffect(() => {
     fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=6`)
