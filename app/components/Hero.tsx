@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Terminal from './Terminal';
 
 export default function Hero() {
   return (
@@ -32,6 +33,7 @@ export default function Hero() {
 
           {/* Stacked Typography */}
           <div className="text-4xl md:text-6xl font-bold mb-6">
+            <p className="text-gradient">Alias: Haruto Okura</p>
             <p className="text-white">Full-Stack</p>
             <p className="text-gray-400">& AI Engineer</p>
           </div>
@@ -54,7 +56,7 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <a
-              href="#work"
+              href="#projects"
               className="px-8 py-3 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple text-white font-semibold hover:shadow-[0_0_30px_rgba(87,240,255,0.4)] transition-all"
             >
               View My Work
@@ -78,39 +80,14 @@ export default function Hero() {
           </svg>
         </motion.div>
 
-        {/* Right Side - Terminal Window */}
+        {/* Right Side - Interactive Terminal */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           className="relative z-10"
         >
-          <div className="terminal-window">
-            <div className="terminal-header">
-              <div className="terminal-dot terminal-dot-red"></div>
-              <div className="terminal-dot terminal-dot-yellow"></div>
-              <div className="terminal-dot terminal-dot-green"></div>
-              <span className="ml-4 text-gray-400 text-sm">bash — 80x24</span>
-            </div>
-            <div className="terminal-content">
-              <div className="text-gray-300">
-                <p><span className="text-neon-green">$</span> npm install -g create-next-app</p>
-                <p className="text-gray-500 mb-2">...</p>
-                <p><span className="text-neon-green">$</span> git commit -m "feat: build scalable systems"</p>
-                <p className="text-neon-blue">[main a1b2c3d] feat: build scalable systems</p>
-                <p className="text-gray-500"> 5 files changed, 234 insertions</p>
-                <p className="mb-2"></p>
-                <p><span className="text-neon-green">$</span> ls projects/</p>
-                <p className="text-purple-400">portfolio/</p>
-                <p className="text-purple-400">ecommerce-api/</p>
-                <p className="text-purple-400">ml-pipeline/</p>
-                <p className="mb-2"></p>
-                <p><span className="text-neon-green">$</span> echo $STATUS</p>
-                <p className="text-neon-green">🚀 Ready to build amazing things</p>
-                <p className="mt-2"><span className="text-neon-green">$</span> <span className="animate-pulse">▋</span></p>
-              </div>
-            </div>
-          </div>
+          <Terminal mode="main" />
         </motion.div>
       </div>
     </section>

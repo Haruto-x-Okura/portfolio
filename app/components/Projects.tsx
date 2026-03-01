@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Terminal from './Terminal';
 
 const projects = [
   {
@@ -28,7 +29,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="work" className="py-20">
+    <section id="projects" className="py-20">
       <div className="max-w-screen-1200 mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -74,21 +75,13 @@ export default function Projects() {
                   ))}
                 </div>
 
-                {/* Terminal Preview */}
-                <div className="terminal-window mb-6">
-                  <div className="terminal-header">
-                    <div className="terminal-dot terminal-dot-red"></div>
-                    <div className="terminal-dot terminal-dot-yellow"></div>
-                    <div className="terminal-dot terminal-dot-green"></div>
-                  </div>
-                  <div className="terminal-content py-3">
-                    <p className="text-gray-400 text-sm">
-                      <span className="text-neon-green">$</span> type 'github' to visit repo
-                    </p>
-                    <p className="text-gray-400 text-sm">
-                      <span className="text-neon-green">$</span> type 'live' to visit demo
-                    </p>
-                  </div>
+                {/* Interactive Terminal */}
+                <div className="mb-6">
+                  <Terminal 
+                    mode="project" 
+                    projectUrl={project.live} 
+                    githubUrl={project.github} 
+                  />
                 </div>
 
                 <div className="flex gap-4">

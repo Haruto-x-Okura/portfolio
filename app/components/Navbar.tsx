@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center gap-3 group">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-neon-blue to-neon-purple flex items-center justify-center text-white font-bold text-lg group-hover:shadow-[0_0_20px_rgba(87,240,255,0.5)] transition-shadow">
-              D
+              HW
             </div>
             <span className="font-mono text-xl text-white">{"<Harsh Wardhan/>"}</span>
           </a>

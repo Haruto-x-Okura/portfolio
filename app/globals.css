@@ -250,3 +250,46 @@ body {
 .stagger-4 { animation-delay: 0.4s; }
 .stagger-5 { animation-delay: 0.5s; }
 .stagger-6 { animation-delay: 0.6s; }
+
+/* Terminal glow effect */
+.terminal-glow {
+  box-shadow: 0 0 30px rgba(87, 240, 255, 0.1),
+              0 0 60px rgba(87, 240, 255, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.terminal-glow:hover {
+  box-shadow: 0 0 40px rgba(87, 240, 255, 0.15),
+              0 0 80px rgba(87, 240, 255, 0.08);
+}
+
+/* Terminal text colors */
+.text-neon-blue {
+  color: #57f0ff;
+}
+
+.text-neon-green {
+  color: #39ff14;
+}
+
+.text-neon-purple {
+  color: #8b5cf6;
+}
+
+/* Custom scrollbar for terminal */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(87, 240, 255, 0.3);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(87, 240, 255, 0.5);
+}
