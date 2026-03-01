@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Harsh Wardhan  
+### Full-Stack Engineer | AI Systems | Scalable Web Architecture
 
-## Getting Started
+🌐 **Live Portfolio:** https://harshwardhanportfolio.vercel.app/  
+📍 India  
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 👨‍💻 Profile
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I design and build production-grade web applications and AI-integrated systems with emphasis on scalability, performance optimization, and clean system architecture.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+My work focuses on:
+- Building maintainable frontend architectures
+- Designing structured backend APIs
+- Implementing data-driven logic
+- Delivering measurable, production-ready solutions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠 Technical Stack
 
-To learn more about Next.js, take a look at the following resources:
+### 🚀 Frontend Engineering
+- React.js
+- Next.js
+- JavaScript (ES6+)
+- HTML5 / CSS3
+- Tailwind CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### ⚙ Backend Engineering
+- Node.js
+- Express.js
+- REST API Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🗄 Data & Storage
+- MongoDB
+- Firebase
 
-## Deploy on Vercel
+### 🧠 Programming Languages
+- Python
+- Java
+- C
+- C++
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🔧 Developer Tools
+- Git
+- GitHub
+- Vercel
+- VS Code
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📂 Selected Projects
+
+### 🧮 SRM CGPA Calculator
+Designed a GPA computation engine using credit-weighted grading logic.
+
+**Engineering Focus:**
+- Deterministic calculation logic
+- Structured input validation
+- Persistent data handling via Firebase
+- Clean UI for academic use cases
+
+**Stack:** JavaScript, Firebase
+
+---
+
+### ⏱ FocusX – Productivity Timer
+Built a responsive Pomodoro system with dynamic UI states and theme adaptability.
+
+**Engineering Focus:**
+- State-driven UI logic
+- Timer synchronization accuracy
+- Modular UI component design
+
+**Stack:** JavaScript, CSS
+
+---
+
+### 🌡 Tempify – Conversion Engine
+Implemented a real-time temperature conversion system supporting Celsius, Fahrenheit, and Kelvin.
+
+**Engineering Focus:**
+- Mathematical transformation accuracy
+- Instant computation without refresh
+- Lightweight, minimal DOM updates
+
+**Stack:** JavaScript
+
+---
+
+## 📊 GitHub Engineering Metrics
+
+The portfolio integrates live GitHub statistics:
+- Repository count
+- Contribution activity
+- Stars
+- Followers
+
+This reflects consistent development output and repository maintenance.
+
+---
+
+## 🏗 Architecture & Deployment
+
+- Built with Next.js (SSR + performance optimization)
+- Component-driven React architecture
+- Utility-first styling using Tailwind CSS
+- Deployed on Vercel with CI-based deployment pipeline
+
+---
+
+## 📬 Contact
+
+For engineering discussions, collaboration, or opportunities, reach out through the contact section on the portfolio.
+
+---
+
+© 2026 Harsh Wardhan
