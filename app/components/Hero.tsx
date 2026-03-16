@@ -45,17 +45,8 @@ export default function Hero() {
                   rounded-full"
             />
 
-            {/* Tag */}
-            <div
-              className="relative px-4 py-1 
-                  text-sm tracking-wider 
-                  border border-blue-400/40 
-                  rounded-full 
-                  bg-black/40 backdrop-blur-md 
-                  text-blue-400 font-mono"
-            >
-              Alias: Haruto Okura
-            </div>
+        
+            
           </div>
 
           <div className="text-4xl md:text-6xl font-bold">
