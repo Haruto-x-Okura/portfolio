@@ -57,9 +57,8 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-blue-400 mr-2">05.</span>
-            Get In Touch
+           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <span className="text-gradient">{"<Contact/>"}</span>
           </h2>
           <p className="text-zinc-400">
             Open to internships, collabs, and freelance work. I usually reply within 24 hours.
@@ -74,10 +73,10 @@ export default function Contact() {
           className="flex flex-wrap gap-3 mb-10"
         >
           <a
-            href="mailto:YOUR_EMAIL@gmail.com"
+            href="mailto:harshwardhansingh1507@gmail.com"
             className="flex items-center gap-2 px-4 py-2 border border-zinc-700 rounded-lg text-zinc-300 hover:border-blue-400 hover:text-blue-400 transition-colors text-sm font-mono"
           >
-            📧 YOUR_EMAIL@gmail.com
+            📧 harshwardhansingh1507@gmail.com
           </a>
           <a
             href="https://linkedin.com/in/harsh-wardhan-singh-cse"
