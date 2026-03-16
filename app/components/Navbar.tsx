@@ -52,7 +52,7 @@ export default function Navbar() {
           </div>
 
           <a
-            href="/resume.pdf"
+            href="/public/harsh_wardhan_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 rounded-lg border border-white/20 text-white font-medium hover:bg-white/10 hover:border-neon-blue/50 hover:shadow-[0_0_20px_rgba(87,240,255,0.3)] transition-all"
