@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-// ✅ Honest stats that still impress for a 1st year
+
 const stats = [
   { label: "Projects Shipped", value: "10+" },
   { label: "Hackathons", value: "1" },
@@ -10,7 +10,7 @@ const stats = [
   { label: "Cups of Coffee", value: "∞" }, // keeps it human
 ];
 
-// ✅ Real, specific facts about you
+
 const highlights = [
   "🎓 B.Tech CS @ SRM University",
   "⚡ Built MemoryOS in 36 hours at a hackathon",
@@ -31,9 +31,8 @@ export default function About() {
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">
-            <span className="text-blue-400 mr-2">01.</span>
-            About Me
+         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <span className="text-gradient">{"<About/>"}</span>
           </h2>
         </motion.div>
 
