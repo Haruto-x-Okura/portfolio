@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 
 // Import ClickSpark for interactive click effects
 import ClickSpark from './components/ClickSpark';
+import ScrollRestoration from './components/ScrollRestoration';
 import HyperspeedBackground from '../components/Hyperspeed/HyperspeedBackground';
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
         The Particles component will render the animated background.
       */}
       <body className="bg-black text-white antialiased">
+        <ScrollRestoration />
         <HyperspeedBackground />
         
         {/* 
