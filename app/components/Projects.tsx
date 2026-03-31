@@ -12,6 +12,15 @@ const projects = [
     live: 'https://srm-cgpa-calculator-by-haruto.vercel.app/',
     image: '/images/Srm_cgpa.png',
   },
+   {
+    name: "MemoryOS",
+    description:
+      "A personal AI second brain — capture, categorize, and surface memories across 7 semantic dimensions. Built in 36 hours at a hackathon with a full auth + database stack.",
+    image: "/images/MemoryOS.png", // add a screenshot
+    tech: ["React", "TypeScript", "Supabase", "Firebase Auth", "Node.js", "Tailwind"],
+    github: "https://github.com/harshwardhan1507/verge",
+  live: "https://verge-eosin.vercel.app/",
+  },
   {
     name: 'FocusX - Pomodoro Timer',
     description: 'A glassmorphism-style Pomodoro timer built with HTML, CSS, and JavaScript, featuring dynamic backgrounds and adaptive text contrast for improved focus and usability.',
@@ -27,16 +36,8 @@ const projects = [
     github: 'https://github.com/harshwardhan1507/12-days-12-projects/tree/master/Tempify',
     live: 'https://tempifybyharuto.netlify.app/',
     image: '/images/tempify.png',
-  },
-  {
-    name: "MemoryOS",
-    description:
-      "A personal AI second brain — capture, categorize, and surface memories across 7 semantic dimensions. Built in 36 hours at a hackathon with a full auth + database stack.",
-    image: "/images/MemoryOS.png", // add a screenshot
-    tech: ["React", "TypeScript", "Supabase", "Firebase Auth", "Node.js", "Tailwind"],
-    github: "https://github.com/harshwardhan1507/verge",
-  live: "https://verge-eosin.vercel.app/",
-}
+  }
+ 
 ];
 
 export default function Projects() {

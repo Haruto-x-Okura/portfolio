@@ -4,22 +4,25 @@ import { motion } from "framer-motion";
 
 const stats = [
   { label: "Projects Shipped", value: "10+" },
-  { label: "Hackathons", value: "1" },
-  { label: "GitHub Repos", value: "6+" },
+  { label: "Hackathons", value: "2" },
+  { label: "GitHub Repos", value: "10+" },
   { label: "Cups of Coffee", value: "∞" }, // keeps it human
 ];
 
 const highlights = [
-  "🎓 B.Tech CS @ SRM University",
-  "⚡ Built MemoryOS in 36 hours at a hackathon",
-  "🌐 Full-stack: React · Node.js · Supabase · Firebase",
-  "📈 Learning DSA in Java for placements",
-  "🎯 Goal: Land a dev internship by 2nd year",
+  "🎓 B.Tech CS @ SRM University, Haryana (2025–2029)",
+  "⚡ Currently building Vertex — a full-stack campus OS for SRM Haryana",
+  "🌐 Full-stack: React · Next.js · Node.js · Supabase · TypeScript",
+  "📈 Leveling up in DSA (Java) for placements & interviews",
+  "🎯 Goal: Dev internship before 2nd year",
 ];
 
 export default function About() {
   return (
-    <section id="about" className="py-24 md:py-32 px-4 sm:px-6 bg-black/50 backdrop-blur-sm">
+    <section
+      id="about"
+      className="py-24 md:py-32 px-4 sm:px-6 bg-black/50 backdrop-blur-sm"
+    >
       <div className="max-w-[1200px] mx-auto">
         {/* Section heading */}
         <motion.div
@@ -45,22 +48,24 @@ export default function About() {
             {/* Bio card */}
             <div className="bg-zinc-900/50 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-zinc-800">
               <p className="text-zinc-300 leading-relaxed mb-4">
-                Hey, I'm{" "}
+                I'm{" "}
                 <span className="text-white font-semibold">Harsh Wardhan</span>{" "}
-                — a 1st year CS student at SRM University and a self-driven
-                full-stack developer.
+                — 1st year CS at SRM University, full-stack developer, and
+                someone who'd rather ship a product than finish another
+                tutorial.
               </p>
               <p className="text-zinc-400 leading-relaxed mb-4">
-                I build real products, not just tutorial clones. From{" "}
-                <span className="text-neon-orange">MemoryOS</span> — an AI second
-                brain built in 36 hours at a hackathon — to tools used by my own
-                college peers, I focus on shipping things that actually work.
+                Currently building{" "}
+                <span className="text-neon-orange">Vertex</span> — a campus
+                operating system for SRM Haryana. Events, registrations,
+                attendance, OD letters — all in one place, because WhatsApp
+                groups and Excel sheets aren't infrastructure.
               </p>
               <p className="text-zinc-400 leading-relaxed">
-                Currently leveling up in{" "}
+                Leveling up in{" "}
                 <span className="text-purple-400">DSA (Java)</span> and backend
-                systems, with a goal to land a dev internship by 2nd year. Open
-                to internships, freelance, and anything interesting.
+                systems. Looking for internships, freelance work, or just
+                something interesting to build.
               </p>
             </div>
 

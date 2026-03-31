@@ -61,8 +61,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-lg sm:text-xl text-gray-400 mb-8 max-w-lg"
           >
-            Building scalable systems and intelligent applications with modern
-            technologies.
+            Scaling systems. Shipping intelligence.
           </motion.p>
 
           {/* CTA Buttons */}
