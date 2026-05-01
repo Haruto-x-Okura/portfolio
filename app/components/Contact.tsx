@@ -125,6 +125,7 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="Your name"
                 className="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-4 py-2 text-white text-sm focus:outline-none focus:border-green-400 transition-colors placeholder-zinc-600"
+                suppressHydrationWarning
               />
             </div>
 
@@ -139,6 +140,7 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="your@email.com"
                 className="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-4 py-2 text-white text-sm focus:outline-none focus:border-green-400 transition-colors placeholder-zinc-600"
+                suppressHydrationWarning
               />
             </div>
 
@@ -160,6 +162,7 @@ export default function Contact() {
               onClick={handleSubmit}
               disabled={formState === "loading"}
               className="w-full py-3 rounded-lg font-semibold text-sm transition-all bg-neon-red hover:bg-neon-red/80 text-white disabled:opacity-50 disabled:cursor-not-allowed"
+              suppressHydrationWarning
             >
               {formState === "loading" ? "Sending..." : "$ send_message →"}
             </button>

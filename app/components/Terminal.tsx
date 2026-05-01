@@ -291,6 +291,7 @@ export default function Terminal({ mode = 'main', projectUrl, githubUrl }: Termi
             className="flex-1 min-w-0 bg-transparent border-none outline-none text-neon-green font-mono caret-transparent"
             spellCheck={false}
             autoComplete="off"
+            suppressHydrationWarning
           />
           {showCursor && !isTyping && (
             <span className="inline-block w-2.5 h-5 bg-neon-green animate-pulse" />
