@@ -66,7 +66,7 @@ export const achievements: Achievement[] = [
     subtitle: 'SRM University Event',
     date: '2026-03-30',
     type: 'certificate',
-    imageUrl: '/images/ThinkTech_harsh.jpg',
+    imageUrl: '/images/Thinktech_harsh.jpg',
     description: 'Secured 2nd place in the extempore event organized by ThinkTech:STEM Orator\'s Society at SRM University.',
     tags: ['Public Speaking', 'Presentation', 'Communication'],
   },
